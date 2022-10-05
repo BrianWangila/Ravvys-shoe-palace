@@ -6,7 +6,7 @@ class CreateShoes < ActiveRecord::Migration[7.0]
       t.integer :size
       t.float :price
       t.string :color
-      t.string :seller
+      t.belongs_to :user
       t.string :description
 
       t.timestamps

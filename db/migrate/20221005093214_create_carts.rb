@@ -3,7 +3,7 @@ class CreateCarts < ActiveRecord::Migration[7.0]
     create_table :carts do |t|
       t.string :shoe
       t.integer :qty
-      t.string :user
+      t.belongs_to :user
       t.boolean :active
 
       t.timestamps
